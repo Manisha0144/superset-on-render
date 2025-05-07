@@ -27,6 +27,7 @@ SQLALCHEMY_DATABASE_URI = os.getenv(
 REST_API_ENABLED = True
 WTF_CSRF_ENABLED = False  # Disable if using API-only access
 PUBLIC_ROLE_LIKE = "Gamma"  # Adjust based on your needs
+WTF_CSRF_ENABLED = False
 
 # CORS settings for n8n/webhook access
 ENABLE_CORS = True
