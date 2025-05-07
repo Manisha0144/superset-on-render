@@ -25,6 +25,7 @@ SQLALCHEMY_DATABASE_URI = os.getenv(
 # ========================
 # Enable REST API for n8n integration
 REST_API_ENABLED = True
+WTF_CSRF_ENABLED = True
 # WTF_CSRF_ENABLED = False  # Disable if using API-only access
 PUBLIC_ROLE_LIKE = "Gamma"  # Adjust based on your needs
 
