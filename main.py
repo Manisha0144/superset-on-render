@@ -6,6 +6,7 @@ app = Flask(__name__)
 @app.route('/run-script', methods=['POST'])
 def run_script():
     data = request.json
+    
     result = subprocess.run(
         ['python3', 'superset_fetcher.py',
          data['base_url'], data['username'],
